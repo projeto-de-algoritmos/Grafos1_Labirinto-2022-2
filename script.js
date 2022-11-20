@@ -137,8 +137,14 @@ class Cell {
         }
     }
 
+    highlight(columns) {
+        let x = (this.colNum * this.parentSize) / columns + 1;
+        let y = (this.rowNum * this.parentSize) / columns + 1;
 
+        ctx.fillStyle = "purple";
 
+        ctx.fillRect(x, y, this.parentSize / columns - 3, this.parentSize / columns - 3)
+    }
 
     show(size, rows, columns) {
         let x = (this.colNum * size) / columns;
