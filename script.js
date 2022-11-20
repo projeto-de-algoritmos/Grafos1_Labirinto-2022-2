@@ -90,7 +90,30 @@ class Cell {
         ctx.stroke();
     }
 
+    checkNeighbours() {
+        let grid = this.parentGrid;
+        let row = this.rowNum;
+        let col = this.colNum;
+        let neighbours = []
 
+        let top = row !== 0 ? grid[row - 1][col] : undefined
+        let right = col !== grid.length - 1 ? grid[row][col + 1] : undefined
+        let bottom = row !== grid.length - 1 ? grid[row + 1][col] : undefined
+        let left = col !== 0 ? grid[row][col - 1] : undefined
+
+
+        if (top && !top.visited) neighbours.push(top)
+        if (right && !right.visited) neighbours.push(right)
+        if (bottom && !bottom.visited) neighbours.push(bottom)
+        if (left && !left.visited) neighbours.push(left)
+
+        if (neighbours.length !== 0) {
+            let random = Math.floor(Math.random() * neighbours.length);
+            return neighbours[random]
+        } else {
+            return undefined;
+        }
+    }
 
 
 
