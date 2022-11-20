@@ -38,7 +38,25 @@ class Maze {
             }
         }
 
+        let next = current.checkNeighbours()
 
+        if (next) {
+            next.visited = true
+            this.stack.push(current);
+            current.highlight(this.columns);
+
+            current.removeWall(current, next)
+
+            current = next
+        } else if (this.stack.length > 0) {
+            let cell = this.stack.pop();
+            current = cell;
+            current.highlight(this.columns)
+        }
+
+        if (this.stack.length == 0) {
+            return;
+        }
 
         window.requestAnimationFrame(() => {
             this.draw()
