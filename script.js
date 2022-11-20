@@ -115,6 +115,29 @@ class Cell {
         }
     }
 
+    removeWall(cell1, cell2) {
+        let x = (cell1.colNum - cell2.colNum);
+
+        if (x == 1) {
+            cell1.walls.leftWall = false;
+            cell2.walls.rightWall = false;
+        } else if (x == -1) {
+            cell1.walls.rightWall = false;
+            cell2.walls.leftWall = false;
+        }
+
+        let y = cell1.rowNum - cell2.rowNum;
+
+        if (y == 1) {
+            cell1.walls.topWall = false;
+            cell2.walls.bottomWall = false;
+        } else if (y == -1) {
+            cell1.walls.bottomWall = false;
+            cell2.walls.topWall = false;
+        }
+    }
+
+
 
 
     show(size, rows, columns) {
