@@ -1,12 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .container {    
-    display: flex;
-    justify-content: center;
-    align-content: center;    
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+#btnGroup {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+body {
+  background-color: #121212;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
