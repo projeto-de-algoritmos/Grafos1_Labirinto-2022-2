@@ -30,8 +30,6 @@ Temas:
 ## Uso 
 Executar o arquivo index.html em algum navegador.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
