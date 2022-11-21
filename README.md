@@ -4,8 +4,7 @@ Temas:
 
 # O Labirinto do Fauno
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Conteúdo da Disciplina**: Grafos 1<br>
 
 ## Alunos
 |Matrícula | Aluno |
@@ -14,17 +13,22 @@ Temas:
 | 170020525  |  Pedro Henrique de Lima Malaquias |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+
+ 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![](img/grafos-inicial.png)
+![](img/grafos-gerado.png)
+![](img/grafos-finalizado.png)
 
 ## Instalação 
 **Linguagem**: JavaScript<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+* Internet
+* Vscode
+* VScode com o plugin Live Server
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Executar o arquivo index.html em algum navegador.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
