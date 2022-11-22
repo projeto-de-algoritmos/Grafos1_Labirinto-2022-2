@@ -14,6 +14,8 @@ Temas:
 
 ## Sobre 
 
+ Projeto com objetivo de gerar um labirinto seguindo a ideia do algoritomo de labirinto com a aplicação do DFS(
+Depth First Search). Depois do labirinto ser gerado é feita uma busca utilizando a Busca em largura (Breadth-first search) para encontrar o melhor caminho até um certo ponto dentro do labirinto.
  
 
 ## Screenshots
